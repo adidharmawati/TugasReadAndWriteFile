@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:backgroundTint="@null"
+    android:orientation="vertical"
+    tools:context=".ReadAndWrite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/add_file"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:drawableTop="@drawable/ic_add"
+            android:minHeight="72dip"
+            android:padding="5dp"
+            android:text="@string/btn_new"
+            android:textColor="#595656"
+            app:strokeColor="@color/white"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/open_file"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:drawableTop="@drawable/ic_open"
+            android:minHeight="72dip"
+            android:padding="5dp"
+            android:text="@string/btn_open"
+            android:textColor="#595656"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/save_file"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:drawableTop="@drawable/ic_save"
+            android:minHeight="72dip"
+            android:padding="5dp"
+            android:text="@string/btn_save"
+            android:textColor="#595656"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kolom_input"
+            android:ems="10"
+            android:hint="Judul File"
+            android:inputType="textPersonName"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="15dp"
+            android:textColor="#595656" />
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:background="@drawable/kolom_input"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Isi File"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textColor="#595656" />
+    </LinearLayout>
+
+</LinearLayout>

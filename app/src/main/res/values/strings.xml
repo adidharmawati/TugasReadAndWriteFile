@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tugas Read and Write File</string>
+    <string name="btn_new">Add FIle</string>
+    <string name="btn_save">Save File</string>
+    <string name="btn_open">Open File</string>
+    <!-- Strings used for fragments for navigation -->
+</resources>
